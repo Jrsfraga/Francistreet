@@ -10,10 +10,15 @@
     --other-font: "Parisienne";
 }
 
-/* Estilização do body do formulário*/
-body {
-    font-family: var(--secondary-font);
+
+.main-form {
+    margin-top: 30px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color) 10%, var(--secondary-color) 90%);
+    color: var(--primary-text-color);
+    overflow-x: hidden; /* Evita scroll horizontal indesejado */
 }
+
 
 /* Estilização do formulário */
 .box {
@@ -106,7 +111,12 @@ box-shadow: 2px 4px 30px var(--secondary-color);
 
 /* posicionamento diferenciado e fixado do rodapé nessa aba */
 .footer {
-    position: fixed;
-    bottom: 10px;
-    left: 42%;
+    padding: 12px;
+    color: var(--secondary-text-color);
+    background: linear-gradient(135deg, var(--primary-color) 10%, var(--secondary-color) 90%);
+    font-family: var(--secondary-font);
+    flex-shrink: 0; /* não encolhe */
+    text-align: center;
 }
+
+
